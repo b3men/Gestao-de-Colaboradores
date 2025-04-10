@@ -3,8 +3,8 @@ package org.example;
 import javax.swing.*;
 
 public class Vendedor extends Funcionario {
-    private double quantidadeVenda;
-    private double valorComissaoPorVenda;
+    protected double quantidadeVenda;
+    protected double valorComissaoPorVenda;
 
     public Vendedor(String nome, double salario, int idade) {
         super(nome, salario, idade);
@@ -17,7 +17,7 @@ public class Vendedor extends Funcionario {
             this.quantidadeVenda = quantidadeVenda;
             this.valorComissaoPorVenda = valorComissaoPorVenda;
         } else {
-            JOptionPane.showMessageDialog(null, "A quantidade de vendas não pode ser negativa. Definindo como 0.");
+            JOptionPane.showMessageDialog(null, "A quantidade de vendas e/ou o valor da comissão não podem ser negativas(os). Definindo como 0.");
             this.quantidadeVenda = 0;
             this.valorComissaoPorVenda = 0;
         }

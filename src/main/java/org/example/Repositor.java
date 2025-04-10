@@ -3,8 +3,8 @@ package org.example;
 import javax.swing.*;
 
 public class Repositor extends Funcionario{
-    private double qtdHoraTrabalhada;
-    private double valorHora;
+    protected double qtdHoraTrabalhada;
+    protected double valorHora;
 
     public Repositor(String nome, double salario, int idade){
         super(nome, salario, idade);
@@ -17,7 +17,7 @@ public class Repositor extends Funcionario{
             this.qtdHoraTrabalhada = qtdHoraTrabalhada;
             this.valorHora = valorHora;
         } else {
-            JOptionPane.showMessageDialog(null, "A quantidade de vendas não pode ser negativa. Definindo como 0.");
+            JOptionPane.showMessageDialog(null, "A quantidade de horas trabalhadas e/ou o valor da hora não podem ser negativas(os). Definindo como 0.");
             this.qtdHoraTrabalhada = 0;
             this.valorHora = 0;
         }

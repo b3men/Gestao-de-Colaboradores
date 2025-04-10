@@ -3,10 +3,12 @@ package org.example;
 import javax.swing.*;
 
 public class Seguranca extends Funcionario{
-    private double valorAdicional;
 
-    public Seguranca (String nome, double salario, int idade, String periodoTrabalhado){
-        super(nome, salario, idade, periodoTrabalhado);
+    protected String periodoTrabalhado;
+    protected double valorAdicional;
+    public Seguranca (String nome, double salario, int idade, String periodoTrabalhado, double valorAdicional){
+        super(nome, salario, idade);
+        this.periodoTrabalhado = "Matutino";
         this.valorAdicional = 0;
     }
     public void verificaPeriodoTrabalhado() {

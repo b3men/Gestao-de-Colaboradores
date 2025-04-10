@@ -14,13 +14,6 @@ public class Funcionario {
         this.idade = idade;
     }
 
-    public Funcionario(String nome, double salario, int idade, String periodoTrabalhado) {
-        this.nome = nome;
-        this.salario = salario;
-        this.idade = idade;
-        this.periodoTrabalhado = this.periodoTrabalhado;
-    }
-
     public String getNome() {
         return nome;
     }
@@ -55,7 +48,7 @@ public class Funcionario {
 
     protected double verificaSalarioNegativo(double salario){
         if (salario < 0){
-            JOptionPane.showMessageDialog(null, " O valor inserido é negativo, por esse motivo será contado como 0 (zero). ");
+            JOptionPane.showMessageDialog(null, " O valor inserido é negativo, por esse motivo será definido como 0 (zero). ");
             salario = 0;
         }
         return salario;

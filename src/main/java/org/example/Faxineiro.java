@@ -3,10 +3,10 @@ package org.example;
 import javax.swing.*;
 
 public class Faxineiro extends Funcionario{
-    private double qtdTurnoTrabalhado;
-    private double valorBonusPorTurno;
+    protected double qtdTurnoTrabalhado;
+    protected double valorBonusPorTurno;
 
-    public Faxineiro(String nome, double salario, int idade) {
+    public Faxineiro(String nome, double salario, int idade, double qtdTurnoTrabalhado, double valorBonusPorTurno) {
         super(nome, salario, idade);
         this.qtdTurnoTrabalhado = 0;
         this.valorBonusPorTurno = 0;
@@ -35,6 +35,3 @@ public class Faxineiro extends Funcionario{
                 "Salário total: R$" + calculaSalario() + "\n";
     }
 }
-
-
-
