@@ -154,10 +154,10 @@ public class PrincipalFuncionario {
                 "4- Cadastrar um segurança. \n" +
                 "5- Cadastrar um faxineiro. \n" +
                 "6- Imprime todos os funcionários cadastrados. \n" +
-                "7- Imprime todos os caixas. \n" + /*-------------------------------------------------------------------------------------------------*/
+                "7- Imprime todos os caixas. \n" +
                 "8- Imprime todos os vendedores. \n" +
-                "9- Imprime todos os repositores. \n" +  /*-------------------------------------------------------------------------------------------------*/
-                "10- Imprime todos os seguranças. \n" +/*-------------------------------------------------------------------------------------------------*/
+                "9- Imprime todos os repositores. \n" +
+                "10- Imprime todos os seguranças. \n" +
                 "11- Imprime todos os faxineiros. \n" +
                 "12- Sair. \n";
 
