@@ -17,7 +17,7 @@ public class Repositor extends Funcionario{
             this.qtdHoraTrabalhada = qtdHoraTrabalhada;
             this.valorHora = valorHora;
         } else {
-            JOptionPane.showMessageDialog(null, "A quantidade de horas trabalhadas e/ou o valor da hora não podem ser negativas(os). Definindo como 0.");
+            JOptionPane.showMessageDialog(null, "A quantidade de horas e/ou valor por hora não podem ser negativos. Serão definidos como 0.");
             this.qtdHoraTrabalhada = 0;
             this.valorHora = 0;
         }

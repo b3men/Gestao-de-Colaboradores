@@ -12,12 +12,12 @@ public class Seguranca extends Funcionario{
         this.valorAdicional = 0;
     }
     public void verificaPeriodoTrabalhado() {
-            if (periodoTrabalhado != null) {
-                this.periodoTrabalhado = periodoTrabalhado;
-            } else {
-                JOptionPane.showMessageDialog(null, "A quantidade de vendas não pode ser negativa. Definindo como 0.");
-                this.periodoTrabalhado = null ;
-            }
+        if (periodoTrabalhado != null) {
+            this.periodoTrabalhado = periodoTrabalhado;
+        } else {
+            JOptionPane.showMessageDialog(null, "A quantidade de vendas não pode ser negativa. Definindo como 0.");
+            this.periodoTrabalhado = null ;
+        }
     }
 
     public void verificaValorNegativo(double valorAdicional) {
